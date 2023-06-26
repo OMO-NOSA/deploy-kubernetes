@@ -1,0 +1,1 @@
+# Contains definitions for Key Management Service (KMS) on AWS for EKS
