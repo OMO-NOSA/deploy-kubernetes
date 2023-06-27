@@ -2,8 +2,9 @@ data "aws_availability_zones" "available" {}
 data "aws_caller_identity" "current" {}
 
 locals {
-  name   = var.name
-  region = var.region
+  name            = var.name
+  region          = var.region
+  cluster_version = var.cluster_version
 
   vpc_cidr = "10.0.0.0/16"
   azs      = slice(data.aws_availability_zones.available.names, 0, 3)
