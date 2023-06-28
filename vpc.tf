@@ -41,20 +41,3 @@ resource "aws_security_group" "default-sec" {
 
   tags = merge(local.tags, { Name = "${local.name}-default-sec" })
 }
-
-resource "aws_iam_policy" "EC2Describe" {
-  name = "${local.name}-EC2Describe"
-
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
-      {
-        Action = [
-          "ec2:Describe*",
-        ]
-        Effect   = "Allow"
-        Resource = "*"
-      },
-    ]
-  })
-}

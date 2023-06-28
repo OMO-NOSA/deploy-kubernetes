@@ -1,1 +1,0 @@
-# Contains fargate definition for EKS
