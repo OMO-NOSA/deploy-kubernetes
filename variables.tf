@@ -29,6 +29,9 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "" {
-
+variable "cluster_version" {
+  description = "Kubernetes cluster version"
+  type        = string
+  default     = "1.27"
 }
+  

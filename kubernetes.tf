@@ -1,6 +1,6 @@
 # Kubernetes definitions
 module "eks" {
-  source = "../.."
+  source = "terraform-aws-modules/eks/aws"
 
   cluster_name                   = local.name
   cluster_version                = local.cluster_version
@@ -26,7 +26,7 @@ module "eks" {
 
   fargate_profile_defaults = {
     iam_role_additional_policies = {
-      additional = aws_iam_policy.additional.arn
+      additional = aws_iam_policy.EC2Describe.arn
     }
   }
 
