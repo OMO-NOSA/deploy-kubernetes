@@ -19,10 +19,9 @@ Features:
 
 ### Required Variables
 
-- AWS access key
-- AWS secret key
+- aws_access_key
+- aws_secret_key
                   
-
 ### Optional Variables
 
 - region            `defaults to us-east-1`    
