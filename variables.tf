@@ -32,6 +32,5 @@ variable "environment" {
 variable "cluster_version" {
   description = "Kubernetes cluster version"
   type        = string
-  default     = "1.27"
+  default     = "1.18"
 }
-  
